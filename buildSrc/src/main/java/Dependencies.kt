@@ -4,9 +4,14 @@
  * https://developer.android.com/jetpack/androidx/versions
  */
 object Dependencies {
-    private const val KOTLIN_VERSION = "1.4.30"
-    private const val COMPOSE_VERSION = "1.0.0-beta05"
-    private const val BUILD_GRADLE_PLUGIN_VERSION = "7.0.0-alpha15"
+    const val MIN_SDK_VERSION = 24
+    const val COMPILE_SDK_VERSION = 30
+    const val BUILD_TOOLS_VERSION = "30.0.3"
+
+    private const val KOTLIN_VERSION = "1.4.32"
+    private const val COMPOSE_VERSION = "1.0.0-beta07"
+    private const val COMPOSE_ACTIVITY_VERSION = "1.3.0-alpha08"
+    private const val BUILD_GRADLE_PLUGIN_VERSION = "7.0.0-beta01"
 
     private const val CORE_KTX_VERSION = "1.3.2"
     private const val RETROFIT_VERSION = "2.6.2"
@@ -25,9 +30,8 @@ object Dependencies {
     const val RETROFIT_CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION"
     const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$COROUTINES_VERSION"
     const val COMPOSE_UI = "androidx.compose.ui:ui:$COMPOSE_VERSION"
-    const val COMPOSE_UI_TOOLING = "androidx.compose.material:material:$COMPOSE_VERSION"
-    const val COMPOSE_MATERIAL = "androidx.compose.ui:ui-tooling:$COMPOSE_VERSION"
-    const val COMPOSE_ACTIVITY = "androidx.activity:activity-compose:1.3.0-alpha04"
+    const val COMPOSE_UI_TOOLING = "androidx.compose.ui:ui-tooling:$COMPOSE_VERSION"
+    const val COMPOSE_ACTIVITY = "androidx.activity:activity-compose:$COMPOSE_ACTIVITY_VERSION"
 
     // test dependencies
     const val JUNIT_API = "org.junit.jupiter:junit-jupiter-api:$JUNIT_VERSION"
